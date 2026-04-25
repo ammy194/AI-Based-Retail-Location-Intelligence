@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8e6a0d00e6bfb3fcff6a450769bb8e9f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8e6a0d00e6bfb3fcff6a450769bb8e9f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8e6a0d00e6bfb3fcff6a450769bb8e9f = L.map(
+                "map_8e6a0d00e6bfb3fcff6a450769bb8e9f",
+                {
+                    center: [18.66946, 76.53775999999999],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c7ddf4bbab3c53a413bcb6035bcf2af6 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c7ddf4bbab3c53a413bcb6035bcf2af6.addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var marker_e3b39896bcbff8f0db618ee65dd82171 = L.marker(
+                [28.6315, 77.2167],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_f90680ccdde55014ac263ce3f0612809 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f642cc2e145d53bed5019115b0e9fb2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_25be051343b88f071367a61a138ad1a9 = $(`<div id="html_25be051343b88f071367a61a138ad1a9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #1 Connaught Place, Delhi             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.661</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">0.608</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">1.000</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">0.283</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">1.000</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">0.553</td></tr>             </table>         </div>         </div>`)[0];
+                popup_3f642cc2e145d53bed5019115b0e9fb2.setContent(html_25be051343b88f071367a61a138ad1a9);
+            
+        
+
+        marker_e3b39896bcbff8f0db618ee65dd82171.bindPopup(popup_3f642cc2e145d53bed5019115b0e9fb2)
+        ;
+
+        
+    
+    
+            marker_e3b39896bcbff8f0db618ee65dd82171.bindTooltip(
+                `<div>
+                     #1 Connaught Place, Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e3b39896bcbff8f0db618ee65dd82171.setIcon(icon_f90680ccdde55014ac263ce3f0612809);
+            
+    
+            var marker_f49f8f034a2f8171355000bb8df34190 = L.marker(
+                [18.559, 73.807],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_69c2ecbb50cbd8dbe1fe7c703021c8b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38377e7a3ff359d00984e193fcf3b4a5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ea1074cbb6e9c8dc2cb9faa0fa467c82 = $(`<div id="html_ea1074cbb6e9c8dc2cb9faa0fa467c82" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #2 Aundh, Pune             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.535</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">1.000</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">0.000</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">1.000</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">0.727</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">0.069</td></tr>             </table>         </div>         </div>`)[0];
+                popup_38377e7a3ff359d00984e193fcf3b4a5.setContent(html_ea1074cbb6e9c8dc2cb9faa0fa467c82);
+            
+        
+
+        marker_f49f8f034a2f8171355000bb8df34190.bindPopup(popup_38377e7a3ff359d00984e193fcf3b4a5)
+        ;
+
+        
+    
+    
+            marker_f49f8f034a2f8171355000bb8df34190.bindTooltip(
+                `<div>
+                     #2 Aundh, Pune
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f49f8f034a2f8171355000bb8df34190.setIcon(icon_69c2ecbb50cbd8dbe1fe7c703021c8b3);
+            
+    
+            var marker_41da6710abb7c7b4216e5ac9ebe2319f = L.marker(
+                [19.1364, 72.8296],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_385e62e983238aaaaaa776135288bd66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aebdae9ab8eae71075ccbfa27568f1dd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_840602f9d0ccfebce824711f8a0335b8 = $(`<div id="html_840602f9d0ccfebce824711f8a0335b8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #3 Andheri West, Mumbai             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.459</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">0.393</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">0.000</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">0.611</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">0.364</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">0.766</td></tr>             </table>         </div>         </div>`)[0];
+                popup_aebdae9ab8eae71075ccbfa27568f1dd.setContent(html_840602f9d0ccfebce824711f8a0335b8);
+            
+        
+
+        marker_41da6710abb7c7b4216e5ac9ebe2319f.bindPopup(popup_aebdae9ab8eae71075ccbfa27568f1dd)
+        ;
+
+        
+    
+    
+            marker_41da6710abb7c7b4216e5ac9ebe2319f.bindTooltip(
+                `<div>
+                     #3 Andheri West, Mumbai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_41da6710abb7c7b4216e5ac9ebe2319f.setIcon(icon_385e62e983238aaaaaa776135288bd66);
+            
+    
+            var marker_d4f11fa5645d51bbb02d29e18333b3a7 = L.marker(
+                [17.4107, 78.444],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_4009bd1979d32e5db63048e551af613d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49cc447533158727c6e46c62e5798698 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3f829c5bd3c7245dd215a219e20f5662 = $(`<div id="html_3f829c5bd3c7245dd215a219e20f5662" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #4 Banjara Hills, Hyderabad             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.431</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">0.874</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">0.005</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">0.588</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">0.000</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">0.495</td></tr>             </table>         </div>         </div>`)[0];
+                popup_49cc447533158727c6e46c62e5798698.setContent(html_3f829c5bd3c7245dd215a219e20f5662);
+            
+        
+
+        marker_d4f11fa5645d51bbb02d29e18333b3a7.bindPopup(popup_49cc447533158727c6e46c62e5798698)
+        ;
+
+        
+    
+    
+            marker_d4f11fa5645d51bbb02d29e18333b3a7.bindTooltip(
+                `<div>
+                     #4 Banjara Hills, Hyderabad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d4f11fa5645d51bbb02d29e18333b3a7.setIcon(icon_4009bd1979d32e5db63048e551af613d);
+            
+    
+            var marker_74f47b33514de44deab0714772f144aa = L.marker(
+                [13.085, 80.2101],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_e6e211e948895e43594fea0e7ac584d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9619ad9a448ce4a88910cb47b43c09bf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4eb9e20cbdcd689623466255b27627b2 = $(`<div id="html_4eb9e20cbdcd689623466255b27627b2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #5 Anna Nagar, Chennai             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.423</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">0.294</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">0.018</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">0.111</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">1.000</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">1.000</td></tr>             </table>         </div>         </div>`)[0];
+                popup_9619ad9a448ce4a88910cb47b43c09bf.setContent(html_4eb9e20cbdcd689623466255b27627b2);
+            
+        
+
+        marker_74f47b33514de44deab0714772f144aa.bindPopup(popup_9619ad9a448ce4a88910cb47b43c09bf)
+        ;
+
+        
+    
+    
+            marker_74f47b33514de44deab0714772f144aa.bindTooltip(
+                `<div>
+                     #5 Anna Nagar, Chennai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74f47b33514de44deab0714772f144aa.setIcon(icon_e6e211e948895e43594fea0e7ac584d7);
+            
+    
+            var marker_0df33f00ca212b9dd57c01ffaa96360f = L.marker(
+                [18.5679, 73.9143],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_404645606c8de5313fe282db4a8b38df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8639e7f80922c14cd8d9b28541d05ae2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_adc16073747feda9f90b5677288f7e24 = $(`<div id="html_adc16073747feda9f90b5677288f7e24" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #6 Viman Nagar, Pune             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.347</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">0.112</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">0.005</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">0.238</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">0.273</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">1.000</td></tr>             </table>         </div>         </div>`)[0];
+                popup_8639e7f80922c14cd8d9b28541d05ae2.setContent(html_adc16073747feda9f90b5677288f7e24);
+            
+        
+
+        marker_0df33f00ca212b9dd57c01ffaa96360f.bindPopup(popup_8639e7f80922c14cd8d9b28541d05ae2)
+        ;
+
+        
+    
+    
+            marker_0df33f00ca212b9dd57c01ffaa96360f.bindTooltip(
+                `<div>
+                     #6 Viman Nagar, Pune
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0df33f00ca212b9dd57c01ffaa96360f.setIcon(icon_404645606c8de5313fe282db4a8b38df);
+            
+    
+            var marker_90787622bc5cbe19b5c5200af3172d2b = L.marker(
+                [19.1176, 72.906],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_2148a23d09bba9064ce058899b7349d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9f177365ee41625f382253708cf6a51 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_47e7cc3bf7af7e4d265b1961252f3973 = $(`<div id="html_47e7cc3bf7af7e4d265b1961252f3973" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #7 Powai, Mumbai             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.308</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">0.243</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">0.018</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">0.084</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">0.545</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">0.851</td></tr>             </table>         </div>         </div>`)[0];
+                popup_f9f177365ee41625f382253708cf6a51.setContent(html_47e7cc3bf7af7e4d265b1961252f3973);
+            
+        
+
+        marker_90787622bc5cbe19b5c5200af3172d2b.bindPopup(popup_f9f177365ee41625f382253708cf6a51)
+        ;
+
+        
+    
+    
+            marker_90787622bc5cbe19b5c5200af3172d2b.bindTooltip(
+                `<div>
+                     #7 Powai, Mumbai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_90787622bc5cbe19b5c5200af3172d2b.setIcon(icon_2148a23d09bba9064ce058899b7349d4);
+            
+    
+            var marker_f21e067d1a6aae606ba86aa67d2a278b = L.marker(
+                [12.9784, 77.6408],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_58952d28fc4a2c98a88d3d111e9e48bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd8c68a6ade5569140e7f0670d0ee745 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_508158dfe16add539b07201e0288f670 = $(`<div id="html_508158dfe16add539b07201e0288f670" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #8 Indiranagar, Bangalore             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.291</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">0.386</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">0.018</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">0.000</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">0.455</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">0.702</td></tr>             </table>         </div>         </div>`)[0];
+                popup_fd8c68a6ade5569140e7f0670d0ee745.setContent(html_508158dfe16add539b07201e0288f670);
+            
+        
+
+        marker_f21e067d1a6aae606ba86aa67d2a278b.bindPopup(popup_fd8c68a6ade5569140e7f0670d0ee745)
+        ;
+
+        
+    
+    
+            marker_f21e067d1a6aae606ba86aa67d2a278b.bindTooltip(
+                `<div>
+                     #8 Indiranagar, Bangalore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f21e067d1a6aae606ba86aa67d2a278b.setIcon(icon_58952d28fc4a2c98a88d3d111e9e48bc);
+            
+    
+            var marker_cd51159c4276a127d19c437ca6949278 = L.marker(
+                [12.9698, 77.75],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_d215709867d169b45a550ee64ad1c6cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d72f124092451d9ba42b97e9c75d6adf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e36d5c60aba046687830847011a15424 = $(`<div id="html_e36d5c60aba046687830847011a15424" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #9 Whitefield, Bangalore             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.239</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">0.534</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">0.048</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">0.047</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">0.273</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">0.277</td></tr>             </table>         </div>         </div>`)[0];
+                popup_d72f124092451d9ba42b97e9c75d6adf.setContent(html_e36d5c60aba046687830847011a15424);
+            
+        
+
+        marker_cd51159c4276a127d19c437ca6949278.bindPopup(popup_d72f124092451d9ba42b97e9c75d6adf)
+        ;
+
+        
+    
+    
+            marker_cd51159c4276a127d19c437ca6949278.bindTooltip(
+                `<div>
+                     #9 Whitefield, Bangalore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cd51159c4276a127d19c437ca6949278.setIcon(icon_d215709867d169b45a550ee64ad1c6cf);
+            
+    
+            var marker_d0c13be8418ee20233edcb906c757ab1 = L.marker(
+                [19.0596, 72.8295],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_dbbb82b6e4ceb7aceb81a66ae6de304d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d2f4dd886a648e46a1991e7b6748c87b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ad7d2c58b485b510604ec650fbc3bfc5 = $(`<div id="html_ad7d2c58b485b510604ec650fbc3bfc5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #10 Bandra, Mumbai             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.194</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">0.070</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">0.036</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">0.133</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">0.727</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">0.223</td></tr>             </table>         </div>         </div>`)[0];
+                popup_d2f4dd886a648e46a1991e7b6748c87b.setContent(html_ad7d2c58b485b510604ec650fbc3bfc5);
+            
+        
+
+        marker_d0c13be8418ee20233edcb906c757ab1.bindPopup(popup_d2f4dd886a648e46a1991e7b6748c87b)
+        ;
+
+        
+    
+    
+            marker_d0c13be8418ee20233edcb906c757ab1.bindTooltip(
+                `<div>
+                     #10 Bandra, Mumbai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d0c13be8418ee20233edcb906c757ab1.setIcon(icon_dbbb82b6e4ceb7aceb81a66ae6de304d);
+            
+    
+            var marker_e44afcfca105eeeaf61b1187d1133ab1 = L.marker(
+                [17.4325, 78.4072],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_f3ac773f0230260c8c1a3663d8a91a50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b42e63dffd269812987a720b5aae0ce3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_00518dea877840e35bf97897f81bd5df = $(`<div id="html_00518dea877840e35bf97897f81bd5df" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #11 Jubilee Hills, Hyderabad             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.174</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">0.176</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">0.005</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">0.109</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">0.455</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">0.245</td></tr>             </table>         </div>         </div>`)[0];
+                popup_b42e63dffd269812987a720b5aae0ce3.setContent(html_00518dea877840e35bf97897f81bd5df);
+            
+        
+
+        marker_e44afcfca105eeeaf61b1187d1133ab1.bindPopup(popup_b42e63dffd269812987a720b5aae0ce3)
+        ;
+
+        
+    
+    
+            marker_e44afcfca105eeeaf61b1187d1133ab1.bindTooltip(
+                `<div>
+                     #11 Jubilee Hills, Hyderabad
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e44afcfca105eeeaf61b1187d1133ab1.setIcon(icon_f3ac773f0230260c8c1a3663d8a91a50);
+            
+    
+            var marker_8652921e4a52ec9106868bdb9ecb70cf = L.marker(
+                [28.5921, 77.046],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_936e18748296b52a2045fb77e5801475 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc6f07579e51f9b0733bc444daa399e5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7971153b29ba192fe4c3ae3f1b47f021 = $(`<div id="html_7971153b29ba192fe4c3ae3f1b47f021" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #12 Dwarka, Delhi             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.162</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">0.000</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">0.026</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">0.062</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">0.545</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">0.277</td></tr>             </table>         </div>         </div>`)[0];
+                popup_bc6f07579e51f9b0733bc444daa399e5.setContent(html_7971153b29ba192fe4c3ae3f1b47f021);
+            
+        
+
+        marker_8652921e4a52ec9106868bdb9ecb70cf.bindPopup(popup_bc6f07579e51f9b0733bc444daa399e5)
+        ;
+
+        
+    
+    
+            marker_8652921e4a52ec9106868bdb9ecb70cf.bindTooltip(
+                `<div>
+                     #12 Dwarka, Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8652921e4a52ec9106868bdb9ecb70cf.setIcon(icon_936e18748296b52a2045fb77e5801475);
+            
+    
+            var marker_60cf9b38e7f74877ce1920c6a70a956b = L.marker(
+                [12.9352, 77.6245],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_e71e7f181428af5efe5c7b71f9471509 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2fff6b1835988030fc97e7683ce5926 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1eaff9c7c50c481595536ecd35509a94 = $(`<div id="html_1eaff9c7c50c481595536ecd35509a94" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #13 Koramangala, Bangalore             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.157</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">0.227</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">0.011</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">0.456</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">0.182</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">0.000</td></tr>             </table>         </div>         </div>`)[0];
+                popup_f2fff6b1835988030fc97e7683ce5926.setContent(html_1eaff9c7c50c481595536ecd35509a94);
+            
+        
+
+        marker_60cf9b38e7f74877ce1920c6a70a956b.bindPopup(popup_f2fff6b1835988030fc97e7683ce5926)
+        ;
+
+        
+    
+    
+            marker_60cf9b38e7f74877ce1920c6a70a956b.bindTooltip(
+                `<div>
+                     #13 Koramangala, Bangalore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_60cf9b38e7f74877ce1920c6a70a956b.setIcon(icon_e71e7f181428af5efe5c7b71f9471509);
+            
+    
+            var marker_5e06c388959c7559a871c091d2ca7698 = L.marker(
+                [13.0418, 80.2341],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_1143d7c7aa90242f0391a6c84d9529b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d556fc261d6e65f4c4d2bb26d5b360c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7d9444d05d08adc98812f56b9ecad048 = $(`<div id="html_7d9444d05d08adc98812f56b9ecad048" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #14 T. Nagar, Chennai             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.137</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">0.112</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">0.000</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">0.012</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">0.636</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">0.064</td></tr>             </table>         </div>         </div>`)[0];
+                popup_2d556fc261d6e65f4c4d2bb26d5b360c.setContent(html_7d9444d05d08adc98812f56b9ecad048);
+            
+        
+
+        marker_5e06c388959c7559a871c091d2ca7698.bindPopup(popup_2d556fc261d6e65f4c4d2bb26d5b360c)
+        ;
+
+        
+    
+    
+            marker_5e06c388959c7559a871c091d2ca7698.bindTooltip(
+                `<div>
+                     #14 T. Nagar, Chennai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5e06c388959c7559a871c091d2ca7698.setIcon(icon_1143d7c7aa90242f0391a6c84d9529b2);
+            
+    
+            var marker_676da9414942e285b035540356075409 = L.marker(
+                [28.5244, 77.2066],
+                {
+}
+            ).addTo(map_8e6a0d00e6bfb3fcff6a450769bb8e9f);
+        
+    
+            var icon_edb377eee6b7455ca44ea4b1bad6d002 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1f7270b1bfa7ca0148c5c82d1cfdb5b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_310aa1bff3612df6269c1a429ef79164 = $(`<div id="html_310aa1bff3612df6269c1a429ef79164" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; width: 220px;">             <h4 style="margin:0 0 6px 0; color: #2c3e50;">                 #15 Saket, Delhi             </h4>             <hr style="margin:4px 0;">             <table style="font-size:12px; width:100%;">                 <tr><td><b>Score</b></td>                     <td style="text-align:right;">0.127</td></tr>                 <tr><td><b>Market Potential</b></td>                     <td style="text-align:right;">0.251</td></tr>                 <tr><td><b>Competition</b></td>                     <td style="text-align:right;">0.026</td></tr>                 <tr><td><b>Affordability</b></td>                     <td style="text-align:right;">0.202</td></tr>                 <tr><td><b>Access+Parking</b></td>                     <td style="text-align:right;">0.182</td></tr>                 <tr><td><b>Foot Traffic</b></td>                     <td style="text-align:right;">0.011</td></tr>             </table>         </div>         </div>`)[0];
+                popup_b1f7270b1bfa7ca0148c5c82d1cfdb5b.setContent(html_310aa1bff3612df6269c1a429ef79164);
+            
+        
+
+        marker_676da9414942e285b035540356075409.bindPopup(popup_b1f7270b1bfa7ca0148c5c82d1cfdb5b)
+        ;
+
+        
+    
+    
+            marker_676da9414942e285b035540356075409.bindTooltip(
+                `<div>
+                     #15 Saket, Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_676da9414942e285b035540356075409.setIcon(icon_edb377eee6b7455ca44ea4b1bad6d002);
+            
+    
+            map_8e6a0d00e6bfb3fcff6a450769bb8e9f.fitBounds(
+                [[12.9352, 72.8295], [28.6315, 80.2341]],
+                {"padding": [30, 30]}
+            );
+        
+</script>
+</html>
